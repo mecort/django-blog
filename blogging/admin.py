@@ -13,7 +13,7 @@ class CategoryInline(admin.TabularInline):
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    inline = [CategoryInline]
+    inlines = [CategoryInline]
 
 # admin.site.register(Post)
 # admin.site.register(Category)
