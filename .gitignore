@@ -1,6 +1,6 @@
 *.pyc
 *.db
 *.sqlite3
+*.zip
 djangoenv/
 djangoenv2/
-mysite.zip
