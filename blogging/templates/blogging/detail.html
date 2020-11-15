@@ -10,9 +10,8 @@
   {{ object.text }}
 </div>
 <ul class="categories">
-  <p> Category:
   {% for category in object.categories.all %}
-    <li>{{ category }},</li>
-  {% endfor %}</p>
+    <li>{{ category }}</li>
+  {% endfor %}
 </ul>
 {% endblock %}
