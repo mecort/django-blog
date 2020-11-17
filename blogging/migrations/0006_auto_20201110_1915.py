@@ -6,17 +6,19 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('blogging', '0005_auto_20201110_1907'),
+        ("blogging", "0005_auto_20201110_1907"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='post',
-            name='categories',
+            model_name="post",
+            name="categories",
         ),
         migrations.AddField(
-            model_name='category',
-            name='posts',
-            field=models.ManyToManyField(blank=True, related_name='categories', to='blogging.Post'),
+            model_name="category",
+            name="posts",
+            field=models.ManyToManyField(
+                blank=True, related_name="categories", to="blogging.Post"
+            ),
         ),
     ]
